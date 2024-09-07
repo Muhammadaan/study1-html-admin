@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title> 
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/style-custom.css">
+</head>
+<body>
+    <div class="container-fluid">
+        <div class="row">
+          <!-- Sidebar -->
+          <nav id="sidebar" class="col-md-3 col-lg-2 d-md-block bg-dark sidebar collapse">
+            <div class="position-sticky">
+              <ul class="nav flex-column">
+
+                <span style="color: #fff; padding-left: 14px;">Muhammad Ainul</span>
+                <span style="color: #fff; font-size: 14px; padding-left: 14px;">muhmmd.aan@gmail.com</span>
+             
+                <hr style="color: #fff;">
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="#">
+                    Dashboard
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">
+                    Books
+                  </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">
+                      Logout
+                    </a>
+                  </li>
+           
+              </ul>
+            </div>
+          </nav>
+
+          <!-- Page Content -->
+          <main class="col-md-9 ms-sm-auto col-lg-10 px-md-4" style="padding-top: 100px;">
+            <div class="row g-0 text-center">
+              <div class="col-sm-6 col-md-8 text-start"><h3>Judul</h3></div>
+              <div class="col-6 col-md-4 text-end"><a  href="{{route('product.create')}}" class="btn btn-primary">Create Data</a></div>
+            </div>
+            
+            <table class="table">
+              <thead>
+                <tr>
+                  <th scope="col">No</th>
+                  <th scope="col">Nama</th>
+                  <th scope="col">Action</th>
+                </tr>
+              </thead>
+              <tbody>
+
+                <tr>
+                  <th scope="row">1</th>
+                  <td   >Larry the Bird</td>
+                  <td><button type="button" class="btn btn-primary">Edit</button> <button type="button" class="btn btn-danger">Delate</button></td>
+                </tr>
+                <tr>
+                  <th scope="row">2</th>
+                  <td   >Larry the Bird</td>
+                  <td><button type="button" class="btn btn-primary">Edit</button> <button type="button" class="btn btn-danger">Delate</button></td>
+                </tr>
+              </tbody>
+            </table>
+
+            
+          </main>
+        </div>
+      </div>
+    
+</body>
+</html>
